@@ -3,8 +3,14 @@
     <style name="Base.Theme.FreshHarvest" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorPrimaryDark">#ebebeb</item>
+<!--        <item name="colorPrimaryDark">#ebebeb</item>-->
     </style>
 
-    <style name="Theme.FreshHarvest" parent="Base.Theme.FreshHarvest" />
+    <style name="Theme.FreshHarvest" parent="Base.Theme.FreshHarvest">
+        <item name="android:statusBarColor">
+            @android:color/transparent
+        </item>
+        <item name="colorPrimaryDark">#ffffff</item>
+
+    </style>
 </resources>
