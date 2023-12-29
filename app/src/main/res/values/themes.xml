@@ -10,7 +10,6 @@
         <item name="android:statusBarColor">
             @android:color/transparent
         </item>
-        <item name="colorPrimaryDark">#ffffff</item>
-
+        <item name="android:fontFamily">@font/nexa_bold</item>
     </style>
 </resources>
