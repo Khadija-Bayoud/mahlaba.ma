@@ -65,12 +65,12 @@ public class MainActivity extends AppCompatActivity {
 
     public ArrayList<ItemsDomain> getData(){
         ArrayList<ItemsDomain> items = new ArrayList<>();
-        items.add(new ItemsDomain("orange","Fresh Orange",6.2,"hdghagzdhhdg",4.2));
-        items.add(new ItemsDomain("apple", "Fresh apple", 6.2, "dhfgdgfgj", 4.2));
-        items.add(new ItemsDomain("watermelon", "Fresh watermelon", 6.2, "gdhghddf", 4.2));
-        items.add(new ItemsDomain("berry", "Fresh berry", 6.2, "bdhgfdgfj", 4.2));
-        items.add(new ItemsDomain("pineapple", "Fresh pineapple", 6.2, "bdhfjhddhb", 4.2));
-        items.add(new ItemsDomain("strawberry", "Fresh strawberry", 6.2, "jhdfgdfgjs", 4.2));
+        items.add(new ItemsDomain("msemen","Msemen Beldi",6.2,"hdghagzdhhdg",4.2));
+        items.add(new ItemsDomain("omelette", "Omelette nature", 6.2, "dhfgdgfgj", 4.2));
+        items.add(new ItemsDomain("harcha", "Harcha", 6.2, "gdhghddf", 4.2));
+        items.add(new ItemsDomain("bghirir", "Beghrir", 6.2, "bdhgfdgfj", 4.2));
+        items.add(new ItemsDomain("briwat", "Salted Briwat", 6.2, "bdhfjhddhb", 4.2));
+        items.add(new ItemsDomain("kroissa", "Croissants", 6.2, "jhdfgdfgjs", 4.2));
 
         return items;
     }
