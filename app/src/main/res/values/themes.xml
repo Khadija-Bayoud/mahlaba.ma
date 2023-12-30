@@ -8,7 +8,8 @@
 
     <style name="Theme.FreshHarvest" parent="Base.Theme.FreshHarvest">
         <item name="android:statusBarColor">
-            @android:color/transparent
+            @android:color/white
         </item>
+        <item name="android:fontFamily">@font/nexa_bold</item>
     </style>
 </resources>

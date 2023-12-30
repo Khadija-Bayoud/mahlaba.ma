@@ -6,7 +6,7 @@
     android:layout_marginStart="12dp"
     android:layout_marginTop="12dp"
     android:layout_marginBottom="12dp"
-    android:background="@drawable/light_green_background2">
+    >
 
     <ImageView
         android:id="@+id/img"
