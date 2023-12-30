@@ -45,17 +45,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
         initrecyclerViewCat();
-        initLocation();
+//        initLocation();
         initRecyclerViewBestDeal();
     }
 
-    private void initLocation() {
-        String[] items = new String[]{"Sbaa Rouadi", "Bensouda"};
-        final Spinner locationSpinner = findViewById(R.id.spinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, items);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        locationSpinner.setAdapter(adapter);
-    }
+//    private void initLocation() {
+//        String[] items = new String[]{"Sbaa Rouadi", "Bensouda"};
+//        final Spinner locationSpinner = findViewById(R.id.spinner);
+//        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, items);
+//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        locationSpinner.setAdapter(adapter);
+//    }
 
     private void initrecyclerViewCat() {
         ArrayList<CategoryDomain> items = new ArrayList<>();
