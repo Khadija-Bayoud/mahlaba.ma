@@ -29,10 +29,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="centerCrop"
+                    android:visibility="invisible"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/top_grey_background" />
+                    app:srcCompat="@drawable/top_grey_background"
+                    tools:visibility="invisible" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout"
@@ -52,7 +54,7 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/back" />
+                        app:srcCompat="@drawable/icons8_back_96___" />
 
                     <TextView
                         android:id="@+id/textView12"
@@ -74,7 +76,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/favorite_white" />
+                        app:srcCompat="@drawable/icons8_heart_96___"
+                        />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <ImageView
@@ -258,16 +261,17 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/addBtn"
+            style="@android:style/Widget.Button"
             android:layout_width="182dp"
             android:layout_height="50dp"
             android:layout_marginEnd="16dp"
-            android:text="ADD TO CART"
-            android:textColor="@color/white"
-            android:paddingStart="16dp"
-            style="@android:style/Widget.Button"
-            android:textSize="20sp"
             android:background="@drawable/green_background"
             android:drawableStart="@drawable/basket"
+            android:paddingStart="16dp"
+            android:text="Add to Cart"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -289,7 +293,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:text="0 MAD"
-            android:textColor="@color/black"
+            android:textColor="@color/green"
             android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/addBtn"
