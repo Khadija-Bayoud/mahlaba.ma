@@ -27,7 +27,7 @@ import euromed.ia.freshharvest.R;
 
 public class DetailActivity extends AppCompatActivity {
     private ItemsDomain object;
-    private ImageView backBtn, itemImg;
+    private ImageView backBtn, itemImg, favBtn;
     private TextView priceKgTxt, titleTxt, descriptionTxt, ratingTxt;
     private RatingBar ratingBar;
     private TextView weightTxt, plusBtn, minusBtn, totalTxt;
@@ -61,6 +61,7 @@ public class DetailActivity extends AppCompatActivity {
         final ImageView pic = findViewById(R.id.img);
 
         addBtn = findViewById(R.id.addBtn);
+        favBtn = findViewById(R.id.favBtn);
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -95,6 +96,41 @@ public class DetailActivity extends AppCompatActivity {
                 }
 
 
+                startActivity(intent);
+            }
+        });
+        favBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailActivity.this, WishListActivity.class);
+
+                String productName = name.getText().toString();
+                String productDesc = desc.getText().toString();
+                String productPrice = price.getText().toString();
+
+                String imageResourceName = productImageMapping.get(productName);
+
+                if (imageResourceName != null) {
+                    imageResourceId = getResources().getIdentifier(
+                            imageResourceName, "drawable", getPackageName());
+                }
+                currentProduct = new CartDomain(
+                        imageResourceId,
+                        productName,
+                        productPrice,
+                        productDesc
+                );
+
+                AppDataWish appData = AppDataWish.getInstance();
+                ArrayList<CartDomain> existingProducts = appData.getExistingProducts();
+
+                if (existingProducts.isEmpty()) {
+                    existingProducts.add(currentProduct);
+                    intent.putExtra("cartDomain", currentProduct);
+                }else{
+                    existingProducts.add(currentProduct);
+                    intent.putExtra("existingProducts", new ArrayList<>(existingProducts));
+                }
                 startActivity(intent);
             }
         });
