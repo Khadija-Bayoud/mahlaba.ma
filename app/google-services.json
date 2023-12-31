@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "762756521450",
+    "project_id": "mahlaba5-5",
+    "storage_bucket": "mahlaba5-5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762756521450:android:e81fc730e3f554e2726693",
+        "android_client_info": {
+          "package_name": "euromed.ia.freshharvest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbqx0_t8J9Pli2GHGj4NCRvvRuQFD2ECE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

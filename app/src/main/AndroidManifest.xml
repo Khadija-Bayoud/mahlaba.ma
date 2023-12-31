@@ -13,6 +13,9 @@
         android:theme="@style/Theme.FreshHarvest"
         tools:targetApi="31">
         <activity
+            android:name=".Activity.CartActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.ProfileActivity"
             android:exported="false" />
         <activity
@@ -20,8 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".Activity.LoginActivity"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".Activity.IntroActivity"
             android:exported="true">

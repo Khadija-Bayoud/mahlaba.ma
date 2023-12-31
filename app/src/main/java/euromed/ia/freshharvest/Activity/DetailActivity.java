@@ -7,14 +7,21 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 import euromed.ia.freshharvest.Adapter.similarAdapter;
+import euromed.ia.freshharvest.Domain.CartDomain;
 import euromed.ia.freshharvest.Domain.ItemsDomain;
 import euromed.ia.freshharvest.R;
 
@@ -27,13 +34,70 @@ public class DetailActivity extends AppCompatActivity {
     private int weight = 1;
     private RecyclerView.Adapter similarAdapter;
     private  RecyclerView recyclerViewSimilar;
+    private Button addBtn;
 
+    private CartDomain currentProduct;
+    int imageResourceId;
+    Map<String, String> productImageMapping = new HashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         setContentView(R.layout.activity_detail);
+
+        productImageMapping.put("Beghrir", "bghirir");
+        productImageMapping.put("Salted Briwat", "briwat");
+        productImageMapping.put("Betbout", "betbout");
+        productImageMapping.put("Harcha", "harcha");
+        productImageMapping.put("Khobz", "khobz");
+        productImageMapping.put("Croissants", "kroissa");
+        productImageMapping.put("Msemen Beldi", "msemen");
+        productImageMapping.put("Omelette nature", "omelette");
+
+        final TextView name = findViewById(R.id.titleTxt);
+        final TextView desc = findViewById(R.id.descriptionTxt);
+        final TextView price = findViewById(R.id.totalTxt);
+        final ImageView pic = findViewById(R.id.img);
+
+        addBtn = findViewById(R.id.addBtn);
+        addBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DetailActivity.this, CartActivity.class);
+
+                String productName = name.getText().toString();
+                String productDesc = desc.getText().toString();
+                String productPrice = price.getText().toString();
+
+                String imageResourceName = productImageMapping.get(productName);
+
+                if (imageResourceName != null) {
+                    imageResourceId = getResources().getIdentifier(
+                            imageResourceName, "drawable", getPackageName());
+                }
+                currentProduct = new CartDomain(
+                        imageResourceId,
+                        productName,
+                        productPrice,
+                        productDesc
+                );
+
+                AppData appData = AppData.getInstance();
+                ArrayList<CartDomain> existingProducts = appData.getExistingProducts();
+
+                if (existingProducts.isEmpty()) {
+                    existingProducts.add(currentProduct);
+                    intent.putExtra("cartDomain", currentProduct);
+                }else{
+                    existingProducts.add(currentProduct);
+                    intent.putExtra("existingProducts", new ArrayList<>(existingProducts));
+                }
+
+
+                startActivity(intent);
+            }
+        });
 
         getBundle();
         initView();

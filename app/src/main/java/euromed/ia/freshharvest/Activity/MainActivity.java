@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.Adapter catAdapter, bestDealAdapter;
     private RecyclerView recyclerViewCat, recyclerViewBestDeal;
 
-    ImageView profile;
+    ImageView profile, cart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        cart = findViewById(R.id.cart);
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CartActivity.class);
                 startActivity(intent);
                 finish();
             }
