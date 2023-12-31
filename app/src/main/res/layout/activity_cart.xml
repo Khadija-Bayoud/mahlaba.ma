@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Activity.CartActivity"
     android:padding="10dp">
+    <include layout="@layout/bottom_bar"/>
 
     <ImageView
         android:id="@+id/back"

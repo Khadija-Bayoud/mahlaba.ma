@@ -26,32 +26,32 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.Adapter catAdapter, bestDealAdapter;
     private RecyclerView recyclerViewCat, recyclerViewBestDeal;
 
-    ImageView profile, cart;
+    ImageView cart, fav, profile;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
         setContentView(R.layout.activity_main);
 
-        profile = findViewById(R.id.profile);
-        profile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
-
         cart = findViewById(R.id.cart);
-        cart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CartActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        fav = findViewById(R.id.fav);
+        profile = findViewById(R.id.profile);
+        cart.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), CartActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        fav.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), WishListActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        profile.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+            startActivity(intent);
+            finish();
         });
 
         initrecyclerViewCat();

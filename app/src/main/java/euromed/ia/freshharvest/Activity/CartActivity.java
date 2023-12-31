@@ -19,7 +19,7 @@ import euromed.ia.freshharvest.Activity.AppData;
 
 public class CartActivity extends AppCompatActivity {
 
-    ImageView back;
+    ImageView back, home, fav, profile;
 
     private RecyclerView recyclerViewCart;
     private CartAdapter adapter;
@@ -31,6 +31,9 @@ public class CartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cart);
 
         back = findViewById(R.id.back);
+        home = findViewById(R.id.home);
+        fav = findViewById(R.id.fav);
+        profile = findViewById(R.id.profile);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +42,21 @@ public class CartActivity extends AppCompatActivity {
                 finish();
             }
         });
-
+        home.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        fav.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), WishListActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        profile.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+            startActivity(intent);
+            finish();
+        });
         initCart();
     }
 

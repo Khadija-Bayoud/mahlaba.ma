@@ -25,6 +25,8 @@ public class WishListActivity extends AppCompatActivity {
     private WishListAdapter adapter;
     private ArrayList<CartDomain> productList;
     private CartDomain product;
+
+    ImageView home, cart, profile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +40,25 @@ public class WishListActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
+        });
+
+        home = findViewById(R.id.home);
+        cart = findViewById(R.id.cart);
+        profile = findViewById(R.id.profile);
+        home.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        cart.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), CartActivity.class);
+            startActivity(intent);
+            finish();
+        });
+        profile.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+            startActivity(intent);
+            finish();
         });
 
         initWishList();
