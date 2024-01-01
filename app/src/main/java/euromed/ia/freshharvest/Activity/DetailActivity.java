@@ -163,19 +163,19 @@ public class DetailActivity extends AppCompatActivity {
         descriptionTxt.setText(object.getDescription());
         ratingTxt.setText("(" + object.getRate() + ")");
         ratingBar.setRating((float) object.getRate());
-        totalTxt.setText((weight*object.getPrice())+"MAD");
+        totalTxt.setText((weight*object.getPrice())+" MAD");
 
         plusBtn.setOnClickListener(v -> {
             weight = weight + 1;
             weightTxt.setText(weight+ "Kg");
-            totalTxt.setText((weight*object.getPrice())+"MAD");
+            totalTxt.setText((weight*object.getPrice())+" MAD");
         });
 
         minusBtn.setOnClickListener(v -> {
             if(weight > 1){
                 weight = weight - 1;
                 weightTxt.setText(weight+ "Kg");
-                totalTxt.setText((weight*object.getPrice())+"MAD");
+                totalTxt.setText((weight*object.getPrice())+" MAD");
             }
         });
     }

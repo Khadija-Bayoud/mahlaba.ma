@@ -92,12 +92,12 @@ public class MainActivity extends AppCompatActivity {
 
     public ArrayList<ItemsDomain> getData(){
         ArrayList<ItemsDomain> items = new ArrayList<>();
-        items.add(new ItemsDomain("msemen","Msemen Beldi",6.2,"hdghagzdhhdg",4.2));
-        items.add(new ItemsDomain("omelette", "Omelette nature", 6.2, "dhfgdgfgj", 4.2));
-        items.add(new ItemsDomain("harcha", "Harcha", 6.2, "gdhghddf", 4.2));
-        items.add(new ItemsDomain("bghirir", "Beghrir", 6.2, "bdhgfdgfj", 4.2));
-        items.add(new ItemsDomain("briwat", "Salted Briwat", 6.2, "bdhfjhddhb", 4.2));
-        items.add(new ItemsDomain("kroissa", "Croissants", 6.2, "jhdfgdfgjs", 4.2));
+        items.add(new ItemsDomain("msemen","Msemen Beldi",3.5,"Msemen Beldi: Flaky, savory Moroccan pancakes with a delightful blend of spices.",4.2));
+        items.add(new ItemsDomain("omelette", "Omelette nature", 8, "Omelette Nature: A classic and simple French omelette, perfect for a quick and delicious breakfast or brunch.", 4.2));
+        items.add(new ItemsDomain("harcha", "Harcha", 4, "Harcha: Moroccan semolina pancakes, crispy on the outside and soft on the inside, a delightful North African treat.", 4.2));
+        items.add(new ItemsDomain("bghirir", "Beghrir", 8, "Beghrir: Moroccan honeycomb pancakes, a unique and spongy delight drizzled with honey and butter.", 4.2));
+        items.add(new ItemsDomain("briwat", "Salted Briwat", 15, "Salted Briwat: Moroccan pastry triangles filled with a savory blend of ingredients, offering a delightful fusion of flavors.", 4.2));
+        items.add(new ItemsDomain("kroissa", "Croissants", 4.5, "Croissants: Buttery and flaky French pastries, a quintessential breakfast treat loved worldwide.", 4.2));
 
         return items;
     }

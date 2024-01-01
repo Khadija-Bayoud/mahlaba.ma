@@ -236,7 +236,6 @@
                         android:layout_gravity="center"
                         android:layout_margin="5dp"
                         android:src="@drawable/icons8_home_96" />
-
                     <TextView
                         android:id="@+id/textView11"
                         android:layout_width="match_parent"

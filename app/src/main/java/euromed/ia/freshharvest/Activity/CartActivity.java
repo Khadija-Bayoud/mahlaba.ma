@@ -6,8 +6,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +27,7 @@ public class CartActivity extends AppCompatActivity {
     private CartAdapter adapter;
     private ArrayList<CartDomain> productList;
     private CartDomain product;
+    float total_price = 0.0F;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,12 +79,16 @@ public class CartActivity extends AppCompatActivity {
             for (int i = 0; i < existingProducts.size(); i++) {
                 product = existingProducts.get(i);
                 productList.add(product);
+                total_price = total_price + Float.parseFloat(product.getPrice().split(" ")[0]);
+                Log.i("Product", String.valueOf(total_price));
             }
         }
 
         adapter = new CartAdapter(productList);
         recyclerViewCart.setLayoutManager(new LinearLayoutManager(this));
         recyclerViewCart.setAdapter(adapter);
+        TextView total = findViewById(R.id.totalPrice);
+        total.setText(total_price + " MAD");
     }
 
 }
