@@ -1,6 +1,8 @@
 # Mahlaba.ma 🥛
 
-<img src="Smart-felah.png" alt="Logo" width="500" height="450">
+<p align="center">
+  <img src="app/src/main/res/drawable-hdpi/mahlaba_ma.png" alt="Logo">
+</p>
 
 > *Slogan* - "ممنوع الطلق والرزق على الله"
 <br>
@@ -9,7 +11,7 @@
 
 👩‍🍳 [@Khadija Bayoud](https://github.com/Khadija-Bayoud) - Moulat Lmsemen 
 
-💵👤 [@Mohammed Machrouh](https://github.com/medmac01) - Caissier Grad 0
+💵 [@Mohammed Machrouh](https://github.com/medmac01) - Caissier Grad 0
 
 <br>
 
