@@ -15,25 +15,32 @@
 
 # 👀 Problem
 
-Problem Statement: 
 There is a lack of a comprehensive and user-friendly platform dedicated to the promotion, sale, and exploration of Moroccan culinary delights through a dedicated Android app. The absence of such a platform hinders the effective showcasing and accessibility of diverse Moroccan food items, potentially limiting the exposure and market reach for local culinary businesses and depriving users of a convenient and centralized means to discover, purchase, and savor the rich gastronomic offerings of Morocco.
 <br> <br>
 
 
 
 # 💭 Proposal
+
 Mahlaba.ma is your ultimate Android app for selling and showcasing Moroccan culinary treasures. From the flaky delights of harcha and msemen to the aromatic wonders of tajine, explore, sell, and savor the essence of Morocco—all in one convenient platform.
 <br> <br>
 
 # 🔑 Key features :
 
 **IntroActivity Interface:** 
+
 **LoginActivity Interface:** 
-**RegisterActivity Interface:** 
+
+**RegisterActivity Interface:**
+
 **MainActivity Interface:** 
+
 **DetailActivity Interface:** 
+
 **CartActivity Interface:**
+
 **WishListActivity Interface:**
+
 **ProfileActivity:**
 <br> <br>
 
