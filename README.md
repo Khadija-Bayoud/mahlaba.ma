@@ -7,9 +7,9 @@
 
 # 🧀 🇲🇦 CEOs
 
-🧑🏻‍🌾 [@Khadija Bayoud](https://github.com/Khadija-Bayoud) - Moulat Lmsemen 
+👩‍🍳 [@Khadija Bayoud](https://github.com/Khadija-Bayoud) - Moulat Lmsemen 
 
-👨🏻‍🌾 [@Mohammed Machrouh](https://github.com/medmac01) - Caissier Grad 0
+💵👤 [@Mohammed Machrouh](https://github.com/medmac01) - Caissier Grad 0
 
 <br>
 
