@@ -8,6 +8,7 @@
     android:padding="10dp">
 
     <include
+        android:id="@+id/include"
         layout="@layout/bottom_bar"
         tools:layout_editor_absoluteX="50dp"
         tools:layout_editor_absoluteY="16dp" />
@@ -71,7 +72,6 @@
         android:id="@+id/totalTxt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/nexa_light"
         android:text="Delivery"
@@ -82,7 +82,7 @@
         app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.901" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/totalPrice"
@@ -109,7 +109,7 @@
         app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.901" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login"
@@ -155,5 +155,15 @@
         app:layout_constraintHorizontal_bias="0.212"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="155dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:srcCompat="@drawable/visa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

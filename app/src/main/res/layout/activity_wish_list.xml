@@ -16,16 +16,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/mycartTxt"
-        android:layout_marginTop="32dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My WishList"
-        android:textSize="30sp"
+        android:layout_marginTop="36dp"
+        android:text="Wishlist"
         android:textColor="@color/blue"
+        android:textSize="30sp"
 
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -60,6 +62,16 @@
         app:layout_constraintTop_toBottomOf="@+id/wishRecycler"
         app:layout_constraintWidth_percent="0.6"
         android:layout_marginTop="84dp"/>
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="29dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/icons8_heart_48___"
+        app:layout_constraintEnd_toStartOf="@+id/mycartTxt"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
