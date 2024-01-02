@@ -31,37 +31,37 @@ Mahlaba.ma is your ultimate Android app for selling and showcasing Moroccan culi
 
 **IntroActivity Interface:** 
 <p align="center">
-  <img src="intro.jpeg" alt="Logo">
+  <img src="intro.jpeg" width=300 height= 500 alt="Logo">
 </p>
 
 **LoginActivity Interface:** 
 <p align="center">
-  <img src="login.jpeg alt="Logo">
+  <img src="login.jpeg" width=300 height= 500 alt="Logo">
 </p>
 
 **RegisterActivity Interface:**
 <p align="center">
-  <img src="register.jpeg alt="Logo">
+  <img src="register.jpeg" width=300 height= 500 alt="Logo">
 </p>
 
 **MainActivity Interface:** 
 <p align="center">
-  <img src="main.jpeg alt="Logo">
+  <img src="main.jpeg"  width=300 height= 500 alt="Logo">
 </p>
 
 **DetailActivity Interface:** 
 <p align="center">
-  <img src="detail.jpeg alt="Logo">
+  <img src="detail.jpeg" width=300 height= 500 alt="Logo">
 </p>
 
 **CartActivity Interface:**
 <p align="center">
-  <img src="cart.jpeg alt="Logo">
+  <img src="cart.jpeg" width=300 height= 500 alt="Logo">
 </p>
 
 **WishListActivity Interface:**
 <p align="center">
-  <img src="wish.jpeg alt="Logo">
+  <img src="wishlist.jpeg" width=300 height= 500 alt="Logo">
 </p>
 
 **OrderActivity Interface:**
