@@ -41,6 +41,8 @@ Mahlaba.ma is your ultimate Android app for selling and showcasing Moroccan culi
 
 **WishListActivity Interface:**
 
+**OrderActivity Interface:**
+
 **ProfileActivity:**
 <br> <br>
 
