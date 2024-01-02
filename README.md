@@ -30,18 +30,39 @@ Mahlaba.ma is your ultimate Android app for selling and showcasing Moroccan culi
 # 🔑 Key features :
 
 **IntroActivity Interface:** 
+<p align="center">
+  <img src="intro.jpeg" alt="Logo">
+</p>
 
 **LoginActivity Interface:** 
+<p align="center">
+  <img src="login.jpeg alt="Logo">
+</p>
 
 **RegisterActivity Interface:**
+<p align="center">
+  <img src="register.jpeg alt="Logo">
+</p>
 
 **MainActivity Interface:** 
+<p align="center">
+  <img src="main.jpeg alt="Logo">
+</p>
 
 **DetailActivity Interface:** 
+<p align="center">
+  <img src="detail.jpeg alt="Logo">
+</p>
 
 **CartActivity Interface:**
+<p align="center">
+  <img src="cart.jpeg alt="Logo">
+</p>
 
 **WishListActivity Interface:**
+<p align="center">
+  <img src="wish.jpeg alt="Logo">
+</p>
 
 **OrderActivity Interface:**
 
