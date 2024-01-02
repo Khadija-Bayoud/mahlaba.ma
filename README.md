@@ -29,45 +29,19 @@ Mahlaba.ma is your ultimate Android app for selling and showcasing Moroccan culi
 
 # 🔑 Key features :
 
-**IntroActivity Interface:** 
-<p align="center">
-  <img src="intro.jpeg" width=300 height= 500 alt="Logo">
-</p>
+| **IntroActivity Interface** | **LoginActivity Interface** | **RegisterActivity Interface** |
+|:---------------------------:|:---------------------------:|:-----------------------------:|
+| <p align="center"><img src="intro.jpeg" width=300 height=633 alt="Logo"></p> | <p align="center"><img src="login.jpeg" width=300 height=633 alt="Logo"></p> | <p align="center"><img src="register.jpeg" width=300 height=633 alt="Logo"></p> |
 
-**LoginActivity Interface:** 
-<p align="center">
-  <img src="login.jpeg" width=300 height= 500 alt="Logo">
-</p>
+| **MainActivity Interface** | **DetailActivity Interface** | **CartActivity Interface** |
+|:---------------------------:|:---------------------------:|:-------------------------:|
+| <p align="center"><img src="main.jpeg" width=300 height=633 alt="Logo"></p> | <p align="center"><img src="detail.jpeg" width=300 height=633 alt="Logo"></p> | <p align="center"><img src="cart.jpeg" width=300 height=633 alt="Logo"></p> |
 
-**RegisterActivity Interface:**
-<p align="center">
-  <img src="register.jpeg" width=300 height= 500 alt="Logo">
-</p>
+| **WishListActivity Interface** |
+|:-----------------------------:|
+| <p align="center"><img src="wishlist.jpeg" width=300 height=633 alt="Logo"></p> |
 
-**MainActivity Interface:** 
-<p align="center">
-  <img src="main.jpeg"  width=300 height= 500 alt="Logo">
-</p>
 
-**DetailActivity Interface:** 
-<p align="center">
-  <img src="detail.jpeg" width=300 height= 500 alt="Logo">
-</p>
-
-**CartActivity Interface:**
-<p align="center">
-  <img src="cart.jpeg" width=300 height= 500 alt="Logo">
-</p>
-
-**WishListActivity Interface:**
-<p align="center">
-  <img src="wishlist.jpeg" width=300 height= 500 alt="Logo">
-</p>
-
-**OrderActivity Interface:**
-
-**ProfileActivity:**
-<br> <br>
 
 # 🎨✨ Design : 
 Our Android app boasts a meticulously crafted design that is not only visually appealing but also authentically reflects the vibrant essence of Moroccan culture and culinary traditions. Every aspect of our app, from the layout to the icons and drawables, has been thoughtfully curated to embody the rich and diverse heritage of Morocco. The use of original icons and drawables is a testament to our commitment to showcasing the uniqueness of Moroccan culinary treasures. 
